@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.ant-input-search .ant-btn {
+  background-color: #3AC5C9; /* Màu nền mới */
+  color: white; /* Màu chữ */
+}
+.scroll-container {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn trên các trình duyệt hỗ trợ */
+}
+
+/* Đảm bảo ẩn thanh cuộn trên tất cả các trình duyệt */
+.scroll-container {
+  -ms-overflow-style: none;  /* IE và Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,13 +37,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background:#f2f2f2
 }
 
 @layer utilities {
