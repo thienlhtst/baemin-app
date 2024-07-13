@@ -5,9 +5,16 @@ import { title } from "process";
 import React, { useRef } from "react";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function ScrollBar({ items }: { items: any }) {
-
+    const router = useRouter();
+    const handleNavigate = () => {
+       
+          router.push('/detailfood');
+        
+      };
     const containerRef = React.useRef<HTMLDivElement>(null);
     const handleNext = () => {
         if (containerRef.current) {
@@ -33,7 +40,7 @@ export default function ScrollBar({ items }: { items: any }) {
                         <div ref={containerRef} className=" scroll-container  w-full h-full flex flex-row gap-3">
 
                             {items.items.map((item: any, index: any) => (
-                                <div className=" group w-48 h-full cursor-pointer " >
+                                <div onClick={handleNavigate} className=" group w-48 h-full cursor-pointer " >
                                     <div className="w-full h-2/3" >
                                         <div className="group-hover:brightness-75" style={{ position: 'relative', width: '100%', height: '100%' }}>
                                             <Image layout="fill" objectFit="cover" src={item.img} alt={""}></Image>

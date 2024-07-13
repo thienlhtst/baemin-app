@@ -1,3 +1,5 @@
+import { Button } from "antd";
+import { Butterfly_Kids } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
@@ -8,7 +10,7 @@ export default function DetailsCart({ Details }: {
     return (
         <>
         {Details.map((items, index) => (
-            <div className="w-full flex flex-col  bg-white  ">
+            <div className="w-full flex flex-col  bg-white rounded-md ">
                 
                     <div className=" flex flex-row my-7 ml-8 items-center gap-3">
                         <input id="default-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded   dark:ring-offset-gray-800 " />
@@ -56,24 +58,7 @@ export default function DetailsCart({ Details }: {
                 
             </div>
             ))}
-            <div className=" flex flex-row fixed bottom-0  w-[90.6%]  mr-16  h-16 bg-white items-center  " >
-                <div  className="flex flex-row gap-2 w-1/2 h-full items-center ml-10">
-                    <div  className="cursor-pointer hover:text-red-600 " >Hủy</div>
-                    <div> Quán Đã chọn: </div>
-                    <div> The Chicken Gang</div>
-                </div>
-                <div className="flex flex-row gap-2 w-1/2 h-full items-center justify-end pr-2"> 
-                <div className=""> Tổng thanh toán (0 Sản phẩm):
-                </div>
-                <div className="text-red-600" >₫0 </div>
-                <div>
-                    <button className="bg-beamin text-white w-40 h-10 rounded-md hover:brightness-105" >Thanh toán</button>
-                </div>
-
-
-                </div>
-
-            </div>
+            
 
 
         </>

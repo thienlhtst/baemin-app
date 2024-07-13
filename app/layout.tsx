@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import HeaderNav from "@/components/headerNav";
+import FooterNav from "@/components/footerNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={inter.className}>
+      <body className="w-full h-fit">
       <HeaderNav/>
-      <AntdRegistry>{children}</AntdRegistry>
+      <AntdRegistry>{children}
+
+
+      </AntdRegistry>
+       
       </body>
+      
     </html>
   );
 }

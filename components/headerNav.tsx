@@ -28,9 +28,9 @@ export default function HeaderNav() {
                 />
             </div>
             <div className="flex-none w-1/4  flex flex-row items-center  py-2" >
-            <Button className="font-normal  leading-5 btn-home	" style={{ fontSize: '18px',height:'100%' ,color:'rgb(128, 128, 137)' }}  type="text" icon={<HomeOutlined  />}>Trang Chủ</Button>
+            <Button href="/dashboard" className="font-normal  leading-5 btn-home	" style={{ fontSize: '18px',height:'100%' ,color:'rgb(128, 128, 137)' }}  type="text" icon={<HomeOutlined  />}>Trang Chủ</Button>
             <Button className="font-normal  leading-5 btn-home	" style={{ fontSize: '18px',height:'100%' ,color:'rgb(128, 128, 137)' }}  type="text" icon={<SolutionOutlined />}>Tài Khoản</Button>
-            <Button  type="text" style={{fontSize: '20px', width:'40px', height:'100%' ,color:'#3AC5C9' }} icon={<ShoppingCartOutlined />} >
+            <Button href="/cart" type="text" style={{fontSize: '20px', width:'40px', height:'100%' ,color:'#3AC5C9' }} icon={<ShoppingCartOutlined />} >
             </Button>
             <span className="text-xs bg-red-600 relative rounded w-full text-white  bottom-3 right-4 text-center" style={{width:'15px' ,borderRadius:'50px'}}  >1</span>
             </div>
