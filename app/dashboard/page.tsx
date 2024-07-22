@@ -7,10 +7,10 @@ import React from "react";
 export default function Home() {
     const items = [
         { name: "Gà Rán", imageSrc: "/images/Ga.png", description: "Thức ăn nhanh" },
-        { name: "Burger", imageSrc: "/images/burger.png", description: "Thức ăn nhanh" },
-        { name: "Bún", imageSrc: "/images/burger.png", description: "Thức ăn nhanh" },
-        { name: "Mì", imageSrc: "/images/burger.png", description: "Thức ăn nhanh" },
-        { name: "Burger", imageSrc: "/images/burger.png", description: "Thức ăn nhanh" },
+        { name: "Burger", imageSrc: "/images/burger.jpg", description: "Thức ăn nhanh" },
+        { name: "Bún", imageSrc: "/images/noddle.png", description: "Thức ăn nhanh" },
+        { name: "Mì", imageSrc: "/images/noddle.png", description: "Thức ăn nhanh" },
+        { name: "Burger", imageSrc: "/images/noddle.png", description: "Thức ăn nhanh" },
     ];
 
     const banneritems = [

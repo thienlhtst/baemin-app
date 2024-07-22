@@ -1,3 +1,4 @@
+'use client'
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 import React from 'react';
@@ -8,49 +9,38 @@ const Page: React.FC = () => {
     const status = [
         {
             id: '1',
-            number: '1',
+            number: 1,
             name: 'Nhà hàng đã nhận đơn',
-            st: true
+            st: false          
         },
         {
             id: '2',
-            number: '2',
+            number: 2,
             name: 'Shipper đã nhận đơn',
-            st: true
+            st: false
         },
         {
-            id: '2',
-            number: '3',
+            id: '3',
+            number: 3,
             name: 'Shipper đang đến nhà hàng',
-            st: true
+            st: false
         },
         {
-            id: '2',
-            number: '4',
+            id: '4',
+            number: 4,
             name: 'Shipper đã đến nhà hàng',
             st: false
         },
+       
         {
-            id: '2',
-            number: '5',
-            name: 'Shipper đã nhận món',
+            id: '5',
+            number: 5,
+            name: 'Shipper đang giao hàng',
             st: false
         },
         {
-            id: '2',
-            number: '6',
-            name: 'Shipper  đang trên đường đến với bạn',
-            st: false
-        },
-        {
-            id: '2',
-            number: '7',
-            name: 'Shipper đã đến vui lòng nghe điện thoại',
-            st: false
-        },
-        {
-            id: '2',
-            number: '8',
+            id: '6',
+            number: 6,
             name: 'Đơn hàng hoàn tất',
             st: false
         },
